@@ -1,0 +1,1 @@
+document.getElementById("myelement").innerHTML='<table id="mytable"><thead><tr><th>Row 1 - Column 1 - Header</th><th>Row 1 - Column 2 - Header</th></tr><thead><tr><td>Row 2 - Column 1</td><td>Row - 2 Column 2</td></tr><tr><td>Row 3 - Column 1</td><td>Row 3 - Column 2</td></tr></table>';

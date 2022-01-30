@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body>
+  <table class="center">
+      <thead>
+      <tr>
+          <th>ID</th>
+          <th>Date</th>
+          <th>Referencia</th>
+          <th>Valor</th>
+          <th>Tipo</th>
+          <th>Status</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for custos in custo %}
+          <tr>
+            <td> {{ custo.id }}</td>
+            <td> {{ custo.data }}</td>
+            <td> {{ custo.referencia }}</td>
+            <td> {{ custo.valor }}</td>
+            <td> {{ custo.tipo }}</td>
+            <td> {{ custo.status }}</td>
+          </tr>
+      {% endfor %}
+      </tbody>
+  </table>
+</body>
+</html>
